@@ -1,0 +1,86 @@
+diff a/Data/Data.csproj b/Data/Data.csproj	(rejected hunks)
+@@ -74,6 +75,26 @@
+     <Compile Include="Migrations\201802242040064_UserCreate.Designer.cs">
+       <DependentUpon>201802242040064_UserCreate.cs</DependentUpon>
+     </Compile>
++    <Compile Include="Migrations\201803231710437_Disabled.cs" />
++    <Compile Include="Migrations\201803231710437_Disabled.Designer.cs">
++      <DependentUpon>201803231710437_Disabled.cs</DependentUpon>
++    </Compile>
++    <Compile Include="Migrations\201803232156499_Accounts.cs" />
++    <Compile Include="Migrations\201803232156499_Accounts.Designer.cs">
++      <DependentUpon>201803232156499_Accounts.cs</DependentUpon>
++    </Compile>
++    <Compile Include="Migrations\201803232224306_Accounts1.cs" />
++    <Compile Include="Migrations\201803232224306_Accounts1.Designer.cs">
++      <DependentUpon>201803232224306_Accounts1.cs</DependentUpon>
++    </Compile>
++    <Compile Include="Migrations\201803232239592_Disabled1.cs" />
++    <Compile Include="Migrations\201803232239592_Disabled1.Designer.cs">
++      <DependentUpon>201803232239592_Disabled1.cs</DependentUpon>
++    </Compile>
++    <Compile Include="Migrations\201803240121085_RolesDb.cs" />
++    <Compile Include="Migrations\201803240121085_RolesDb.Designer.cs">
++      <DependentUpon>201803240121085_RolesDb.cs</DependentUpon>
++    </Compile>
+     <Compile Include="Migrations\Configuration.cs" />
+     <Compile Include="Properties\AssemblyInfo.cs" />
+     <Compile Include="Repository.cs" />
+@@ -94,6 +115,57 @@
+     <EmbeddedResource Include="Migrations\201802242040064_UserCreate.resx">
+       <DependentUpon>201802242040064_UserCreate.cs</DependentUpon>
+     </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803122324130_Add-Migration DropDown.resx">
++      <DependentUpon>201803122324130_Add-Migration DropDown.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803142322431_DD1.resx">
++      <DependentUpon>201803142322431_DD1.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803151512406_DD6.resx">
++      <DependentUpon>201803151512406_DD6.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803151517430_DD7.resx">
++      <DependentUpon>201803151517430_DD7.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803151612543_DD8.resx">
++      <DependentUpon>201803151612543_DD8.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803151619118_DD9.resx">
++      <DependentUpon>201803151619118_DD9.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803151704155_DD11.resx">
++      <DependentUpon>201803151704155_DD11.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803151718096_HarshDD.resx">
++      <DependentUpon>201803151718096_HarshDD.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803151736496_OMG.resx">
++      <DependentUpon>201803151736496_OMG.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803151920409_HArshOMG22.resx">
++      <DependentUpon>201803151920409_HArshOMG22.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803201503518_HarshDDropdwn.resx">
++      <DependentUpon>201803201503518_HarshDDropdwn.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803220347563_ResourcesName.resx">
++      <DependentUpon>201803220347563_ResourcesName.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803231710437_Disabled.resx">
++      <DependentUpon>201803231710437_Disabled.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803232156499_Accounts.resx">
++      <DependentUpon>201803232156499_Accounts.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803232224306_Accounts1.resx">
++      <DependentUpon>201803232224306_Accounts1.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803232239592_Disabled1.resx">
++      <DependentUpon>201803232239592_Disabled1.cs</DependentUpon>
++    </EmbeddedResource>
++    <EmbeddedResource Include="Migrations\201803240121085_RolesDb.resx">
++      <DependentUpon>201803240121085_RolesDb.cs</DependentUpon>
++    </EmbeddedResource>
+   </ItemGroup>
+   <ItemGroup>
+     <None Include="App.config" />
