@@ -1,0 +1,9 @@
+diff a/Core/Core.csproj b/Core/Core.csproj	(rejected hunks)
+@@ -46,6 +46,7 @@
+     <Compile Include="Domains\ErrorLog.cs" />
+     <Compile Include="Domains\Facility.cs" />
+     <Compile Include="Domains\Resources.cs" />
++    <Compile Include="Domains\Role.cs" />
+     <Compile Include="Domains\Users.cs" />
+     <Compile Include="Helpers\Security\SecurityHelper.cs" />
+     <Compile Include="Helpers\User\UserHelper.cs" />
