@@ -25,23 +25,6 @@ namespace Data.Mappings
             Property(c => c.Description)
             .HasMaxLength(100);
 
-            Property(c => c.CategoryId)
-                .IsRequired()
-                .HasMaxLength(100);
-            Property(c => c.FacilityId)
-                .IsRequired();
-            Property(c => c.SubCategoryId)
-                .IsOptional()
-                .HasMaxLength(100);
-            Property(c => c.Quantity)
-                .IsRequired();
-            Property(c => c.OldQuantity)
-                .IsOptional();
-            Property(c => c.IsActive)
-                .IsRequired();
-
-            Property(c => c.Comments)
-               .IsOptional();
         }
   }
  }

@@ -16,40 +16,24 @@ namespace Data.Migrations
         {
             var users = context.Set<Account>();
             var roles = context.Set<Role>();
-            var adminusers = context.Set<Users>();
 
             if (users.Any())
                 return;
 
             // else seed your data here
             var salt = "";
-            string username = "admin@admin.com";
+
             var user = new Account()
             {
-                Username = username,
-                PasswordSalt = SecurityHelper.HashPassword("password", ref username),
-                //PasswordSalt = salt,
-                PasswordHash = "password",
-                //PasswordSalt = "password",
-                UserId = 1,
-                FirstLogin = true
+                Username = "admin",
+                PasswordHash = SecurityHelper.HashPassword("password", ref salt),
+                PasswordSalt = salt
             };
-
-            var adminuser = new Users()
-            {
-                Name = "admin",
-                Email = "admin@admin.com",
-                RoleId = 1,
-                Address = "Administrator Location",
-                UserEnabled = true
-            };
-            adminusers.AddOrUpdate(adminuser);
-
             users.AddOrUpdate(user);
 
             var role1 = new Role()
             {
-                RoleName = "Admin"
+                RoleName ="Admin"
             };
 
             var role2 = new Role()

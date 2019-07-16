@@ -14,17 +14,15 @@ namespace Data.Mappings
             HasKey(u => u.Id);
 
             // validations
-            Property(c => c.Username)
-                .IsRequired()
-                .HasMaxLength(100);
+           // Property(c => c.Username)
+            //    .IsRequired()
+             //   .HasMaxLength(100);
 
-            Property(c => c.PasswordHash)
-                .IsRequired();
+           // Property(c => c.PasswordHash)
+              //  .IsRequired();
 
-            Property(c => c.PasswordSalt)
-                .IsRequired();
-            Property(c => c.UserId)
-            .IsOptional();
+           // Property(c => c.PasswordSalt)
+               // .IsRequired();
         }
     }
 }

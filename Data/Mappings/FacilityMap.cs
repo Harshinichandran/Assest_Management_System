@@ -26,10 +26,23 @@ namespace Data.Mappings
                 .IsRequired();
 
             //HasOptional(x => x.Users)
-               // .WithMany(x => x.Facilities)
-               // .HasForeignKey(x => x.Id)
-               // .WillCascadeOnDelete(false);
+            // .WithMany(x => x.Facilities)
+            // .HasForeignKey(x => x.Id)
+            // .WillCascadeOnDelete(false);
 
-         }
+
+          //  HasOptional(x => x.Users)
+          //.WithMany(x => x.Facilities)
+          // .HasForeignKey(x => x.UserId)
+          //.WillCascadeOnDelete(false);
+
+            // HasRequired(x => x.Users)
+            // .WithMany(x => x.FacilityPeru)
+            //.HasForeignKey(x => x.Users_Id)
+            // .WillCascadeOnDelete(false);
+
+
+
+        }
     }
 }

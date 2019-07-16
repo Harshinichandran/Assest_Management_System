@@ -13,36 +13,55 @@ namespace Data.Mappings
     {
           public UsersMap()
         {
-                // Table 
-                ToTable("Users", "dbo");
-                // Primary Key
-                HasKey(u => u.Id);
+            // Table 
+            ToTable("Users", "dbo");
+            // Primary Key
+            HasKey(u => u.Id);
 
-                // validations
-                Property(c => c.Name)
-                    .IsRequired()
-                    .HasMaxLength(100);
+            // validations
+            Property(c => c.Name)
+                .IsRequired()
+                .HasMaxLength(100);
 
-                Property(c => c.Address)
-                    .IsRequired()
-                    .HasMaxLength(200);
-               
-                Property(c => c.Email)
-                  .IsRequired();
-
-              //    HasRequired(x => x.Roles)
-              //    .WithMany(x => x.UsersInfo)
-              //     .HasForeignKey(x => x.RoleId)
-              //    .WillCascadeOnDelete(false);
-
-              //  HasRequired(x => x.Facility)
-              //.WithMany(x => x.UserCollection)
-              // .HasForeignKey(x => x.SelectedFacility)
-              //.WillCascadeOnDelete(false);
+            Property(c => c.Address)
+                .IsRequired()
+                .HasMaxLength(200);
+            //Property(c => c.Role)
+            // .IsRequired()
+            // .HasMaxLength(100);
+            Property(c => c.SelectedFacility)
+              .IsRequired();
 
 
-            }
+            //Property(c => c.Role)//Harshini-7
+            // .IsRequired();
+            // Property(c => c.SelectedFacility)
+            // .IsRequired();
+
+            HasRequired(x => x.Roles)
+              .WithMany(x => x.UsersInfo)
+               .HasForeignKey(x => x.RoleId)
+              .WillCascadeOnDelete(false);
+
+            HasRequired(x => x.Facility)
+          .WithMany(x => x.UserCollection)
+           .HasForeignKey(x => x.SelectedFacility)
+          .WillCascadeOnDelete(false);
+
+
+
+
+        }
     }
-  
+   /* class FacilityMap : EntityTypeConfiguration<Facility>
+    {
+        public FacilityMap()
+        {
+            Property(c => c.FacilityName)
+                .IsRequired();
+
+        }
+    }*/
+
 }
 
